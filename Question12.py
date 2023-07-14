@@ -1,0 +1,7 @@
+def is_anagram(s1, s2):
+    return sorted(s1) == sorted(s2)
+
+# Example usage
+string1 = "listen"
+string2 = "silent"
+print(is_anagram(string1, string2))  # Output: True

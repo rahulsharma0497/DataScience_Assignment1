@@ -1,0 +1,16 @@
+def first_non_repeating_character(s):
+    char_count = {}
+    for char in s:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    for char in s:
+        if char_count[char] == 1:
+            return char
+    return None
+
+# Example usage
+string = "abracadabra"
+non_repeating_char = first_non_repeating_character(string)
+print(non_repeating_char)  # Output: "c"
